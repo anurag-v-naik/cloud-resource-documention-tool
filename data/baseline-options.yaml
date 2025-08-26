@@ -1,0 +1,32 @@
+# A list of permitted environment names
+env:
+  - dev
+  - qa
+  - prod
+  - sandbox
+
+# A list of authorized business units or departments
+dept:
+  - eng
+  - ops
+  - fin
+  - mkt
+
+# A list of available Snowflake tiers for warehouses
+snowflake_tier:
+  - xsmall
+  - small
+  - medium
+  - large
+
+# A list of cluster purposes for Databricks
+cluster_purpose:
+  - analytics
+  - etl
+  - ml
+
+# A list of supported AWS regions
+region:
+  - us-east-1
+  - us-west-2
+  - eu-central-1

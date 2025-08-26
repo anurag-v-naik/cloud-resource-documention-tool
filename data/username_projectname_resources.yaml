@@ -1,0 +1,13 @@
+resources:
+  - resourceType: "aws_s3_bucket"
+    generatedName: "eng-dev-s3-core-app"
+    attributes:
+      project: "core-app"
+      region: "us-east-1"
+      owner: "john.doe"
+  - resourceType: "snowflake_warehouse"
+    generatedName: "fin-qa-wh-data-lake-standard"
+    attributes:
+      project: "data-lake"
+      tier: "standard"
+      owner: "jane.doe"

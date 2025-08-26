@@ -1,0 +1,66 @@
+aws:
+  s3_bucket:
+    template: "${dept}-${project}-${env}-s3"
+    attributes:
+      - dept
+      - project
+      - env
+      - owner
+  iam_role:
+    template: "iam-role-${project}-${env}-${role_type}"
+    attributes:
+      - project
+      - env
+      - role_type
+      - owner
+  dynamodb_table:
+    template: "${dept}-${project}-${env}-ddb-${table_type}"
+    attributes:
+      - dept
+      - project
+      - env
+      - table_type
+      - owner
+
+snowflake:
+  warehouse:
+    template: "${dept}-${project}-${snowflake_tier}-wh-${env}"
+    attributes:
+      - dept
+      - project
+      - snowflake_tier
+      - env
+      - owner
+  database:
+    template: "db-${project}-${env}-${db_type}"
+    attributes:
+      - project
+      - env
+      - db_type
+      - owner
+
+databricks:
+  cluster:
+    template: "dbc-${dept}-${project}-${env}-${cluster_purpose}"
+    attributes:
+      - dept
+      - project
+      - env
+      - cluster_purpose
+      - owner
+  job:
+    template: "job-${project}-${env}-${job_name}"
+    attributes:
+      - project
+      - env
+      - job_name
+      - owner
+
+gcp:
+  gcs_bucket:
+    template: "gcs-${dept}-${project}-${env}-bucket"
+    attributes:
+      - dept
+      - project
+      - env
+      - owner

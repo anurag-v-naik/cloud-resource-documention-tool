@@ -1,0 +1,14 @@
+{
+  "name": "enterprise-naming-standards-tool",
+  "version": "1.0.0",
+  "description": "A full-stack web application to provision and document resources based on enterprise naming conventions.",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix frontend\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

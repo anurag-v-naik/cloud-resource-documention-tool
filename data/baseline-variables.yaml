@@ -1,0 +1,4 @@
+project: "data-lake-v2"
+env: "dev"
+dept: "eng"
+owner: "john.doe"
